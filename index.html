@@ -1,1 +1,129 @@
-https://www.blomsterlandet.se/tips-rad/hogtider/halloween/halloweenpumpa-gor-sa-har/
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glad Halloween!</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(#160d2b, #35144a, #10091b);
+      color: white;
+      text-align: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 35px 15px;
+    }
+
+    h1 {
+      color: #ff9d2e;
+      font-size: 48px;
+      text-shadow: 0 0 15px #ff6500;
+    }
+
+    h2 {
+      color: #ffd18a;
+    }
+
+    .pumpkin {
+      font-size: 90px;
+      animation: bounce 2s infinite;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.08);
+      border: 2px solid #ff9d2e;
+      border-radius: 20px;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 25px;
+      width: 80%;
+      box-shadow: 0 0 25px #8b39a8;
+    }
+
+    .spooky {
+      font-size: 55px;
+      margin: 15px;
+    }
+
+    button {
+      background: #ff8c1a;
+      color: #24102e;
+      border: none;
+      padding: 14px 25px;
+      border-radius: 25px;
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #ffd166;
+      transform: scale(1.05);
+    }
+
+    #message {
+      color: #ffd166;
+      font-size: 21px;
+      margin-top: 20px;
+    }
+
+    footer {
+      padding: 30px 10px;
+      color: #d7bde8;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="pumpkin">🎃</div>
+    <h1>Glad Halloween!</h1>
+    <h2>Välkommen till den spökligaste natten!</h2>
+  </header>
+
+  <main class="card">
+    <div class="spooky">👻 🦇 🕷️</div>
+
+    <p>
+      Buuh! Vågar du gå in i det hemsökta huset?
+    </p>
+
+    <p>
+      Jag önskar dig en Halloween fylld av bus,
+      godis, skratt och lite lagom läskiga spöken!
+    </p>
+
+    <p>Kom ihåg att se upp för häxor och vampyrer! 🧙</p>
+
+    <button onclick="showMessage()">
+      Klicka om du vågar! 👀
+    </button>
+
+    <p id="message"></p>
+  </main>
+
+  <footer>
+    <p>🍬 Bus eller godis? 🍬</p>
+    <p>Ha en riktigt kuslig och rolig Halloween! 🦇</p>
+  </footer>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").textContent =
+        "BUU! 👻 Du har blivit förtrollad! Glad Halloween! 🎃";
+    }
+  </script>
+</body>
+</html>
